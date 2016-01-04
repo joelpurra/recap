@@ -11,84 +11,84 @@ Whitney Merrill
 ## Talk notes
 
 - Imagine a world.
-  - A police officer walks down the street.
-  - Has a camera and an ear plug.
-  - Gets stats on a possible upcoming crime.
-  - Sees a person who fits the possible crime.
-  - Should the person be arrested? Searched? Questioned?
-  - Do other factors weigh in?
+    - A police officer walks down the street.
+    - Has a camera and an ear plug.
+    - Gets stats on a possible upcoming crime.
+    - Sees a person who fits the possible crime.
+    - Should the person be arrested? Searched? Questioned?
+    - Do other factors weigh in?
 - Using algorithms sometimes said "to have no bias" towards gender, ethincity etcetera.
 - Current software.
-  - Collect data from many sources.
-    - Weather.
-    - Geodata.
-    - Previous crimes.
-  - Targets areas rather than individuals.
-  - Data.
-    - Split data into training set, validation set, test set.
-    - Develop classification rules by analyzing training set.
-    - ...
-  - Only probabilistic predictions, not suspiscion of individuals.
-  - Future plus past.
+    - Collect data from many sources.
+        - Weather.
+        - Geodata.
+        - Previous crimes.
+    - Targets areas rather than individuals.
+    - Data.
+        - Split data into training set, validation set, test set.
+        - Develop classification rules by analyzing training set.
+        - ...
+    - Only probabilistic predictions, not suspiscion of individuals.
+    - Future plus past.
 - Data used.
-  - Types.
-    - Personal charactersistics (age, gender, race, religion).
-    - Decmographic (address, salary, occupation).
-    - Activities of indiciduals.
-    - Scientific data (radioation data).
-  - Sources.
-    - Foreign travel info.
-    - Video cameras.
-    - Biometrics.
-    - ...
-    - ...
+    - Types.
+        - Personal charactersistics (age, gender, race, religion).
+        - Decmographic (address, salary, occupation).
+        - Activities of indiciduals.
+        - Scientific data (radioation data).
+    - Sources.
+        - Foreign travel info.
+        - Video cameras.
+        - Biometrics.
+        - ...
+        - ...
 - Hitachi Visualization Predicitve Crima Analytics (PCA).
-  - Geoviz.
-  - Real-time soecial media and internet data feeds.
+    - Geoviz.
+    - Real-time soecial media and internet data feeds.
 - HunchLab.
-  - ...
+    - ...
 - Domain Awareness Systems (NYC plus Microsoft).
-  - Can track indiciduals and packages.
-  - ...
+    - Can track indiciduals and packages.
+    - ...
 - IBM SPSS Crime Prediction and Prevention.
-  - ...
+    - ...
 - Chicago "Heat List".
-  - 420 names.
-  - 500x more likely to commit violent crimes?
-  - Distributed to police officers.
+    - 420 names.
+    - 500x more likely to commit violent crimes?
+    - Distributed to police officers.
 - PRECOB
  - Used throughout Germany and Switzerland.
  - Used to forecast burglaries and other repeat-offenses.
 - Similar systems
-  - Medical prediction based on personal data and stats.
-  - Security clearance for govt job applicants.
+    - Medical prediction based on personal data and stats.
+    - Security clearance for govt job applicants.
 - US law.
-  - Suspiscion.
-    - Must look at the whole pictures (totality of the circumstances).
-    - Must make a balanced assessment of the relative weights.
-  - How much does the US govt really need?
-    - ~90% beyoud a reasoable doubt.
-    - ...
-    - ~30% reasonable suspiscion.
-    - Can an algorightm reach 30% suspiscion alone? 60%? 90%?
-    - Must have suspiscion before, not after, intervening.
-  - Totality of the circumstances.
-    - Can the algorithm keep up?
-      - Not realtime, not enough (all!) data.
-    - Algorithm as one piece in the totality of the circumstances.
-    - Bad underlying data, noise in training data, biased data.
-  - Acceptable error rate?
-    - 1% error rate is still a huge number of people who will be affected.
-    - Database errors.
-    - Human error.
-    - Software error.
+    - Suspiscion.
+        - Must look at the whole pictures (totality of the circumstances).
+        - Must make a balanced assessment of the relative weights.
+    - How much does the US govt really need?
+        - ~90% beyoud a reasoable doubt.
+        - ...
+        - ~30% reasonable suspiscion.
+        - Can an algorightm reach 30% suspiscion alone? 60%? 90%?
+        - Must have suspiscion before, not after, intervening.
+    - Totality of the circumstances.
+        - Can the algorithm keep up?
+            - Not realtime, not enough (all!) data.
+        - Algorithm as one piece in the totality of the circumstances.
+        - Bad underlying data, noise in training data, biased data.
+    - Acceptable error rate?
+        - 1% error rate is still a huge number of people who will be affected.
+        - Database errors.
+        - Human error.
+        - Software error.
 - Concerns.
-  - Feedback loop.
-    - Biases will be persisted.
+    - Feedback loop.
+        - Biases will be persisted.
 - Positives pars?
-  - Crime reduction shown in cities where software has been used.
-  - May or may not be because of software.
+    - Crime reduction shown in cities where software has been used.
+    - May or may not be because of software.
 - How to eliminate bias?
-  - Humans are involved.
-  - Initial selection is biased.
+    - Humans are involved.
+    - Initial selection is biased.
 

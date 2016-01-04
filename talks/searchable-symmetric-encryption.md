@@ -17,50 +17,50 @@ Tobias Mueller, Christian Forler
 - ...
 - Hash functions with partially extractable/calculable bit masks.
 - Searching.
-  - Client `DetEnc()`, sends to server.
-  - Hashes are mappable to words.
-  - One example shows hashes versus word frequency clouds; hashes can be used to match words.
-  - Uses padding to 32 bytes per word.
-    - King James Bible.
-      - Plain-text 4.3MB.
-      - Cipher-text 25MB.
-      - Time to encrypt 0.211 seconds.
-      - Search 0.181 seconds (worst case).
-      - High frequency words get results faster (God 0.003 seconds).
+    - Client `DetEnc()`, sends to server.
+    - Hashes are mappable to words.
+    - One example shows hashes versus word frequency clouds; hashes can be used to match words.
+    - Uses padding to 32 bytes per word.
+        - King James Bible.
+            - Plain-text 4.3MB.
+            - Cipher-text 25MB.
+            - Time to encrypt 0.211 seconds.
+            - Search 0.181 seconds (worst case).
+            - High frequency words get results faster (God 0.003 seconds).
 - Index-based search.
-  - Index with hashes on client.
-  - Encrypted on server.
-  - Index has to be downloaded to client?
-  - Client creates search index hash and index key hash, based on searched word.
-  - The combination is used for an index lookup.
+    - Index with hashes on client.
+    - Encrypted on server.
+    - Index has to be downloaded to client?
+    - Client creates search index hash and index key hash, based on searched word.
+    - The combination is used for an index lookup.
 - Side channel leakage.
-  - The size of the returned index list provides a hint about result frequency, the size has to be masked.
-  - Use an incremental search:
-    - Lookup index 0 first.
-    - If it exists, lookup index 1 as well.
-    - Repeat until no result.
-  - King James Bible.
-    - Plain 4.3MB
-    - Cipher-text 4.3MB.
-    - Index size 0.125MB.
-    - Time to encrypt 0.108 seconds.
-    - Search in constant time -- around 0.001 seconds.
-  - This scheme is susceptible to statistical analysis.
+    - The size of the returned index list provides a hint about result frequency, the size has to be masked.
+    - Use an incremental search:
+        - Lookup index 0 first.
+        - If it exists, lookup index 1 as well.
+        - Repeat until no result.
+    - King James Bible.
+        - Plain 4.3MB
+        - Cipher-text 4.3MB.
+        - Index size 0.125MB.
+        - Time to encrypt 0.108 seconds.
+        - Search in constant time -- around 0.001 seconds.
+    - This scheme is susceptible to statistical analysis.
 - Outlook and conclusions.
-  - Shown schemes allow clients to perform server-side operations on encrypted data.
-  - Deterministic search token -> statistical analysis.
-  - Full He... Encryption (FHE) is not yet a practical option.
-  - The shown schemes have been implemented as POC; call for libraries.
+    - Shown schemes allow clients to perform server-side operations on encrypted data.
+    - Deterministic search token -> statistical analysis.
+    - Full He... Encryption (FHE) is not yet a practical option.
+    - The shown schemes have been implemented as POC; call for libraries.
 - Conclusions of presented schemes.
-  - Deterministic encryption.
-    - Fast setup.
-    - Insecure search.
-  - Keyword (Song, Wagner, Perrig (SWP)).
-    - Search is O(n).
-   - Index (Cash et al.).
-     - Search is O(1)
-     - Index maintenance is needed (for updates etcetera).
-  - Slightly different features.
-  - More schemes exists!
-  - Searching on encrypted data is practical.
+    - Deterministic encryption.
+        - Fast setup.
+        - Insecure search.
+    - Keyword (Song, Wagner, Perrig (SWP)).
+        - Search is O(n).
+     - Index (Cash et al.).
+         - Search is O(1)
+         - Index maintenance is needed (for updates etcetera).
+    - Slightly different features.
+    - More schemes exists!
+    - Searching on encrypted data is practical.
 

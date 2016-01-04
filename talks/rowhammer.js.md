@@ -17,74 +17,74 @@
 ## Talk notes
 
 - History
-  - 2014-06: flipping bits without accessing them, using `clflush` (cache line flush) instruction seen as a reliability issue.
-  - 2015-03: first exploits published.
-  - 2015-06: first exploits without `clflush` published.
+    - 2014-06: flipping bits without accessing them, using `clflush` (cache line flush) instruction seen as a reliability issue.
+    - 2015-03: first exploits published.
+    - 2015-06: first exploits without `clflush` published.
 - DRAM organization.
-  - DRAM has banks, rows, cells.
-  - Cells lose electricity and needs to be recharged periodically, or they become unstable.
-  - Cells lose more electricity when nearby rows are accessed.
-  - Reading neighbor rows speeds up the process, and can lead to bit flips.
-  - Reading the same data over and over needs to be done without cache; done using `clflush`.
+    - DRAM has banks, rows, cells.
+    - Cells lose electricity and needs to be recharged periodically, or they become unstable.
+    - Cells lose more electricity when nearby rows are accessed.
+    - Reading neighbor rows speeds up the process, and can lead to bit flips.
+    - Reading the same data over and over needs to be done without cache; done using `clflush`.
 - Rowhammer with `clflush`.
-  - Targets addressing rows with a flush+reload.
-  - Measure timing (cache hit vs miss).
-  - Run on shared libraries to spy on other processes.
-  - Automated attacks reading crypto keys, creating keyloggers etcetera.
+    - Targets addressing rows with a flush+reload.
+    - Measure timing (cache hit vs miss).
+    - Run on shared libraries to spy on other processes.
+    - Automated attacks reading crypto keys, creating keyloggers etcetera.
 - Rowhammer without `clflush`.
-  - No `clflush` outside of x86, and not accessible from javascript.
-  - Access memory, fill up cache.
-  - Reload data from memory.
+    - No `clflush` outside of x86, and not accessible from javascript.
+    - Access memory, fill up cache.
+    - Reload data from memory.
 - Rowhammer.js: the challenges.
-   # How to get physical address in javascript?
-  # Which physical addresses to access?
-  # In which order to access them?
-  # How to get accurate timings in javascript?
+     # How to get physical address in javascript?
+    # Which physical addresses to access?
+    # In which order to access them?
+    # How to get accurate timings in javascript?
 - Rowhammer.js solutions.
-  # Physical addresses and DRAM.
-    - Fixed map from physical address to DRAM cells.
-    - Undocumented by Intel.
-    - Operating systems use 2MB memory pages. 2MB is 21 bits.
-    - The last 21 bits of the physical addresses, are the same as the last 21 bits of the virtual address, is the same last 21 bits of JS array indices.
-  # Get physical memory addresses.
-    - Assume cache uses least recently used (LRU) replacement.
-    - Pages cross several rows; need to check timing to make sure to get data from page.
-    - An Intel "hash" (really XOR) function maps addresses to slices; it has been reverse engineered and can be calculated.
-    - This way memory addresses can be mapped to memory banks/rows/cells.
-  # Cache flush strategies.
-    - Older CPU models replace oldest cache entries first (LRU).
-      - Need to repeat reads to evict old cache entry.
-    - Newer CPUs don't use LRU; 75% success rate on Haswell, which is too slow.
-      - Using a new cache flush strategy which takes care of proper eviction; now 99.7% success rate.
-  # How to get accurate timing in javascript.
-    - `window.performance.now()`
-      - Timing is rounded to 5 microseconds to avoid some other attacks (cache attacks, used to track mouse movements).
-      - Rounding not a problem for Rowhammer.js, as it makes millions of accesses.
-    - DRAM refresh interval (microseconds) can be tweaked in BIOS.
-      - Rowhammer.js requires a higher refresh interval (>25 µs) than `clflush` and native eviction strategies (>15µs).
-      - Maximum number of bit flips per 15 minutes are about 10^5 for both `clflush`, native eviction and Rowhammer.js.
-        - This means more than 10 bit flips per second using javascript.
-        - Results are hardware dependent.
+    # Physical addresses and DRAM.
+        - Fixed map from physical address to DRAM cells.
+        - Undocumented by Intel.
+        - Operating systems use 2MB memory pages. 2MB is 21 bits.
+        - The last 21 bits of the physical addresses, are the same as the last 21 bits of the virtual address, is the same last 21 bits of JS array indices.
+    # Get physical memory addresses.
+        - Assume cache uses least recently used (LRU) replacement.
+        - Pages cross several rows; need to check timing to make sure to get data from page.
+        - An Intel "hash" (really XOR) function maps addresses to slices; it has been reverse engineered and can be calculated.
+        - This way memory addresses can be mapped to memory banks/rows/cells.
+    # Cache flush strategies.
+        - Older CPU models replace oldest cache entries first (LRU).
+            - Need to repeat reads to evict old cache entry.
+        - Newer CPUs don't use LRU; 75% success rate on Haswell, which is too slow.
+            - Using a new cache flush strategy which takes care of proper eviction; now 99.7% success rate.
+    # How to get accurate timing in javascript.
+        - `window.performance.now()`
+            - Timing is rounded to 5 microseconds to avoid some other attacks (cache attacks, used to track mouse movements).
+            - Rounding not a problem for Rowhammer.js, as it makes millions of accesses.
+        - DRAM refresh interval (microseconds) can be tweaked in BIOS.
+            - Rowhammer.js requires a higher refresh interval (>25 µs) than `clflush` and native eviction strategies (>15µs).
+            - Maximum number of bit flips per 15 minutes are about 10^5 for both `clflush`, native eviction and Rowhammer.js.
+                - This means more than 10 bit flips per second using javascript.
+                - Results are hardware dependent.
 - Implementation.
-  - Idea: part original root exploit.
-    - Uses page table spraying.
-    - Needs shared memory, which isn't available in JS.
-    - Another paper shows some shared memory in JS; all zero data pages are deduplicated to a single memory address (to save memory).
-  - Physical memory access exploit is similar to native code rowhammer exploits, but needs to target the write bit using the zero data page.
+    - Idea: part original root exploit.
+        - Uses page table spraying.
+        - Needs shared memory, which isn't available in JS.
+        - Another paper shows some shared memory in JS; all zero data pages are deduplicated to a single memory address (to save memory).
+    - Physical memory access exploit is similar to native code rowhammer exploits, but needs to target the write bit using the zero data page.
 - Solution.
-  - Dynamic row refreshing, based on number of reads.
-    - Needs new hardware; can't patch legacy systems.
-  - Increase the refresh rate.
-    - Usually by doubling the refresh rate.
-    - Needs BIOS updates -- but who does that?
-  - Patch OS.
-    - If a program can rowhammer only it's own process, some problems are mitigated.
-    - Limit problems by not sharing memory pools across (OS) privilege levels for the pages.
+    - Dynamic row refreshing, based on number of reads.
+        - Needs new hardware; can't patch legacy systems.
+    - Increase the refresh rate.
+        - Usually by doubling the refresh rate.
+        - Needs BIOS updates -- but who does that?
+    - Patch OS.
+        - If a program can rowhammer only it's own process, some problems are mitigated.
+        - Limit problems by not sharing memory pools across (OS) privilege levels for the pages.
 - Conclusion.
-  - Cache eviction is fast enough to replace `clflush`.
-  - This allows for exploits in any programming language.
-  - This allows attacks on any hardware (with DRAM), such as cell phones.
-  - Look out for a release of Rowhammer.js.
+    - Cache eviction is fast enough to replace `clflush`.
+    - This allows for exploits in any programming language.
+    - This allows attacks on any hardware (with DRAM), such as cell phones.
+    - Look out for a release of Rowhammer.js.
 
 
 ## Links
