@@ -1,12 +1,18 @@
 # The state of Internet Censorship
 
+*The techniques to control access to the Internet, and the ability to bring transparency to those processes are both continuing to evolve. We’ll give an update on the landscape of online information controls, and our ability to measure them.*
+
 Will Scott, andz@torproject.org
 
-*The techniques to control access to the Internet, and the ability to bring transparency to those processes are both continuing to evolve. We’ll give an update on the landscape of online information controls, and our ability to measure them.*
+- https://events.ccc.de/congress/2015/Fahrplan/events/7143.html
+- https://media.ccc.de/v/32c3-7143-the_state_of_internet_censorship
+
+
+## Talk notes
 
 - China's great cannon; DDOS with javascript.
   - Injects a small piece of javascript into HTML.
-  - Major chinese websites infected.
+  - Major Chinese websites infected.
   - Floods targets with traffic from visitor's browsers.
   - Targeted western sites.
 - China cracks down on individual developers.
@@ -15,21 +21,21 @@ Will Scott, andz@torproject.org
 - South Korea's "Smart Sheriff" application adds security holes.
 - North Korea is using a Squid proxy.
 - Gambling online censorship.
-  - Overblocking and "mistaken" blocking.
+  - Over-blocking and "mistaken" blocking.
   - Many EU countries restrict online gambling.
   - Some allow domestic online gambling only.
   - Greek ISPs blocks domain kind of "at will", to follow the law of the Gaming Commission.
     - Some ISP does DPI.
     - HTTP 403 status.
     - Blocking pages.
-    - Redirecting to the Gaming Comission website.
+    - Redirecting to the Gaming Commission website.
     - This has spilled over to other kinds of "illegal content", blocked using the same system with 403 results.
 - UK
   - Government pressured ISPs to implement filters.
   - Each ISP decides what/how to block.
     - Dentists, bars, random pages have been blocked.
     - 21013 sites blocked by strict filters (opt-in).
-    - 11395 sutes blocked by default filters (installed by default, can opt-out).
+    - 11395 sites blocked by default filters (installed by default, can opt-out).
 - Saudi Arabia
   - Uses "WireFilter" hardware/software, marketed as a "worry-free internet experience".
 - Iraq
@@ -95,4 +101,3 @@ Will Scott, andz@torproject.org
   - Pluggable transports for SOCKS/Tor.
   - Be an advocate in your home area.
 
-EOT

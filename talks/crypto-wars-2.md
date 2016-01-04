@@ -2,6 +2,12 @@
 
 *Governments around the world are seeking to put a stop to secure end-to-end encryption, from the UK’s Data Retention and Investigatory Powers Act, to Australia’s Defence Trade Controls Act, to India’s draft proposal to require plain text copies of all secure messages, to the United States’ Federal Bureau of Investigation’s public pressure on global companies like Apple and Google to weaken their security and provide law enforcement access to plain text content.*
 
+- https://events.ccc.de/congress/2015/Fahrplan/events/7386.html
+- https://media.ccc.de/v/32c3-7386-crypto_wars_part_ii
+
+
+## Talk notes
+
 Kurt Opsahl (EFF)
 
 - 20 years ago there was a fight against governments limiting crypto in different ways.
@@ -23,14 +29,14 @@ Kurt Opsahl (EFF)
       - See 32c3 talk about logjam.
     - Code is speech.
       - EFF and djb took export control to court and won in djb vs DoJ.
-      - First amendment for both speech and "recieving" speech.
+      - First amendment for both speech and "receiving" speech.
     - 1990s clipper chip.
       - NSA-manufactured.
       - For voice communications.
       - Key escrow.
       - Broken in 1994, 1995 leaving the same holes open to everyone.
     - 1997 Strong crypto is great, buuutt...
-    - 2010 Strong encryption is great, they just need to hand over the plaintext.
+    - 2010 Strong encryption is great, they just need to hand over the plain-text.
     - 2010s encryption at scale.
       - Encryption for mobile phones (iOS 8, Android).
       - Mesaging services (iMessage, TextSecure, WhatsApp, ...).
@@ -42,7 +48,7 @@ Kurt Opsahl (EFF)
       - "Terrorism."
       - Backdoors etcetera.
       - Lack of back doors irritates.
-        - FBI: ~"people put themsselves beyond the law".
+        - FBI: ~"people put themselves beyond the law".
         - UK PM Cameron: ~"companies need to fight terrorism".
         - Trying to downplay companies selling crypto as money-hungry buzzword marketers.
       - Secure back door proposals.
@@ -73,10 +79,10 @@ Kurt Opsahl (EFF)
           - Currently accepting comments.
         - Australia's Defence Trace Controls Act.
           - Prohibits "intangible supply" of encryption tech.
-          - Teachers and researchs could be subject to unclear export controls with severe penalties.
+          - Teachers and research could be subject to unclear export controls with severe penalties.
           - International Assoc of Cryptologic Research and 100s others signed petition.
         - India considers an encryption policy.
-          - Requires everyone to store encrypted messages also in plaintext.
+          - Requires everyone to store encrypted messages also in plain-text.
           - Was withdrawn.
         - China's anti-terrorism law.
           - Passed December 2015.
@@ -97,7 +103,7 @@ Kurt Opsahl (EFF)
   - Malware on end-point.
 - Attacking crypto.
   - NSA's BULLRUN program has $250M yearly budget.
-    - "Insert vulns".
+    - "Insert vulnerabilities".
     - "Influence policies..."
   - 2004 NSA paid $10M to RSA to make backdoored `DUAL_EC_DRBG` default.
     - Backdoored `Q` value.
@@ -105,7 +111,7 @@ Kurt Opsahl (EFF)
     - Juniper's ScreenOS used DUAL_EC_DRBG.
     - Not the same `Q` backdoor.
     - Could get Dual EC output to passively break VPN.
-    - Snippet of code allowed a hardcoded passwords to break in in SSH and Telnet.
+    - Snippet of code allowed a hard-coded passwords to break in in SSH and Telnet.
     - Looks like someone pwned the NSA backdoor.
   - Malware.
     - Own the end-point, everything is broken.
@@ -113,34 +119,35 @@ Kurt Opsahl (EFF)
 - Universial declaration of human rights.
   - Requires encryption.
   - "Code is speech."
-    - Freedom of expression must allow for publicaion of end-to-end crypto systems -- especially open source projects.
+    - Freedom of expression must allow for publication of end-to-end crypto systems -- especially open source projects.
     - Protecting against oppressive regimes more important than maximizing spying.
 - Principle.
-  - Weak encryptiopn mostly good for mass, untargeted spying.
+  - Weak encryption mostly good for mass, untargeted spying.
     - Mass spying less effective, more invasive.
     - Strong encryption can guarantee real privacy with math.
     - Strong encryption enables innovation.
       - For example ecommerce, bitcoin.
 - Public policy.
-  - Forcing companies to compromise secirity will make everyone less safe.
-    - Encryption critical for seciryt.
+  - Forcing companies to compromise security will make everyone less safe.
+    - Encryption critical for security.
   - Other govts will make similar demands.
   - Already in a golden age of surveillance.
 - Pragmatism.
   - Can't stop crypto software/information -- it's already out there.
     - Especially open source.
   - Math: can't make crypto both strong and weak at the same time.
-  - Weakening crypto for ordinary citizens won't stop terrosists to use it.
+  - Weakening crypto for ordinary citizens won't stop terrorists to use it.
 - Promoting.
   - Promote, create, improve, use encryption.
   - Show your friends.
   - Make censorship resistant tools.
     - Open source, wide distribution, reproducible builds.
-  - Let'e Encrypt.
+  - Let's Encrypt.
     - "Easy and fun!"
     - No more excuse for HTTP.
   - Encrypt the web.
     - Responses to the NSA's smiley face.
-      - Large proiders massively increased crypto usage. Still PRISM though.
-    - Use secure messagers.
+      - Large providers massively increased crypto usage. Still PRISM though.
+    - Use secure messengers.
 - Make sure we win Crypto Wars part 2.
+

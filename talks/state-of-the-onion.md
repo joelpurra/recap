@@ -4,6 +4,12 @@
 
 Roger, Jacob, Mike Perry, Shari Steele, Alison Macrina
 
+- https://events.ccc.de/congress/2015/Fahrplan/events/7307.html
+- https://media.ccc.de/v/32c3-7307-state_of_the_onion
+
+
+## Talk notes
+
 - Unlikely partners.
   - Facebook, and their .onion address.
   - IETF, and the recognition of .onion as a special use domain name.
@@ -13,9 +19,9 @@ Roger, Jacob, Mike Perry, Shari Steele, Alison Macrina
     - Two major drops in users.
   - Bangladesh.
     - Facebook blocked; users moved to Tor.
-  - Carnegie Mellon Unicversity (CMU) in Pittsburgh.
+  - Carnegie Mellon University (CMU) in Pittsburgh.
     - Researchers did badly executed research.
-    - Deanonymization of users.
+    - De-anonymization of users.
     - When Roger contacted them, they went silent.
     - Was scheduled for a Black Hat talk in 2015, but pulled.
     - Rumored to be connected to FBI.
@@ -82,4 +88,4 @@ Roger, Jacob, Mike Perry, Shari Steele, Alison Macrina
   - Steele, the dream candidate.
   - Crowd funding collected $120k from 3000 donors.
   - thejuicemedia.com
-  - 
+

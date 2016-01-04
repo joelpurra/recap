@@ -4,6 +4,12 @@
 
 Max Schrems
 
+- https://events.ccc.de/congress/2015/Fahrplan/events/7513.html
+- https://media.ccc.de/v/32c3-7513-safe_harbor
+
+
+## Talk notes
+
 - Studied in California.
 - Facebook people talked about how EU laws didn't matter to them.
 - Three procedures.
@@ -32,14 +38,14 @@ Max Schrems
   - Procedure.
     - TRUSTe is doing arbitration, but it's "not in their power."
     - FCC says it's "not in their power".
-    - Irish DPC said (RTE) that US companies "obviously" hand over data to the US intelligency agencies.
+    - Irish DPC said (RTE) that US companies "obviously" hand over data to the US intelligence agencies.
     - Irish DPC said it doesn't really matter (?).
-    - Irish DPC says they don't _have_ to investigate, and that it might not be a _frivolous" claim.
-    - Other cases in Luxemburg, Germany.
+    - Irish DPC says they don't _have_ to investigate, and that it might not be a "frivolous" claim.
+    - Other cases in Luxembourg, Germany.
     - Irish high court Schrems vs DPC.
       - Costly if you lose the case, because you have to pay the costs.
       - Case has to be brought to the court physically at a certain time and day.
-      - irish juridicial system uses paper, and this case had thousands.
+      - Irish juridical system uses paper, and this case had thousands.
       - The court doesn't allow the claimant to talk to the judge -- only through two other representatives/lawyers (?).
       - The Irish court made a question to the EU commission.
       - Irish court deemed everything said about PRISM is true, based on slides.
@@ -52,7 +58,7 @@ Max Schrems
 - Outcome.
   - Now any third-party (non-EU) country's has to have data protection on an _equivalent level_, instead of _adequate_.
   - All Safe harbor-allowed companies have been revoked.
-    - Now companies have to ask for informed, unambigious, free choice consent to data storage. This includes mentioning "sending data to NSA, FBI, ..."
+    - Now companies have to ask for informed, unambiguous, free choice consent to data storage. This includes mentioning "sending data to NSA, FBI, ..."
   - Standard contractual clauses/BCRs.
     - Question about "factual" or "abstract/law" level checks.
     - Hotel bookings are still legal, because the data is needed to perform the service on location, for example in New York.
@@ -65,8 +71,9 @@ Max Schrems
   - Serious problems for business subject to US surveillance laws.
 - EU surveillance.
   - Charter of fundamental rights doesn't cover EU countries surveillance.
-  - ECHR can be of help; currenlty fighting about some privacy details against EU countries' surveillance.
+  - ECHR can be of help; currently fighting about some privacy details against EU countries' surveillance.
 - Microsoft solution.
   - Put all data in Germany.
   - Only EU law.
 - US 
+

@@ -4,6 +4,12 @@
 
 Jennifer Helsby
 
+- https://events.ccc.de/congress/2015/Fahrplan/events/7449.html
+- https://media.ccc.de/v/32c3-7449-prediction_and_control
+
+
+## Talk notes
+
 - Data.
   - We give away data on the web, through or cellphones, on our wrists.
 - Decision making.
@@ -24,12 +30,12 @@ Jennifer Helsby
   - Can have serious implications.
   - Chinese social credit system.
     - Inputs.
-      - Ranks ficnancial records.
-      - Chriminal history.
+      - Ranks financial records.
+      - Criminal history.
       - Drivers license history.
       - Some medical info.
       - Purchase history.
-      - Social medoa monitoring.
+      - Social media monitoring.
       - Social network analysis.
     - Goal is to "Carry forward sincerity and traditional virtues."
     - Can give social perks; hotels will give you perks.
@@ -70,11 +76,11 @@ Jennifer Helsby
     - Reached 20% voter shift.
     - That margin can change about 25% of elections worldwide.
   - Behavioral insights team.
-    - UK group created by David Camron.
+    - UK group created by David Cameron.
     - "The nudge unit."
     - Use behavioral research to encourage people to make "the right decisions" in their life. (As defined by the government.)
     - The US are creating their own group.
-  - Optmization.
+  - Optimization.
     - For websites, it's easy.
       - Google wants you to use their services more.
       - Facebook wants you to spend more time, click on more items.
@@ -86,7 +92,7 @@ Jennifer Helsby
     - Government systems.
       - Optimizing for compliance; see the police systems.
 - Awareness.
-  - Because our world view is limited by big data algorithm outputs, what we precieve as the "free world" is limited. We can't even see the barb wire.
+  - Because our world view is limited by big data algorithm outputs, what we perceive as the "free world" is limited. We can't even see the barb wire.
 - ...
   - Twins getting drivers license could not, because of fraud detection software at the DMV.
   - Automated license plate readers (ALPR) is used in San Francisco.
@@ -113,7 +119,7 @@ Jennifer Helsby
     - Poor vs rich see different "internets".
     - Men vs women as well.
   - Obfuscation.
-    - Adnaseum Firefox plugin clicks on every ad on every page.
+    - "Adnaseum" Firefox plugin clicks on every ad on every page.
 - Policy.
   - Regulation.
   - Lack of ethics review in private companies.
@@ -121,6 +127,7 @@ Jennifer Helsby
   - Auditing.
     - Third-party.
     - Some companies don't want Auditing.
-- Closing thougths.
+- Closing thoughts.
   - Algorithmic systems need appropriate oversight in order to be controlled.
   - Hacking and privacy advocacy community has an important role in the fight.
+

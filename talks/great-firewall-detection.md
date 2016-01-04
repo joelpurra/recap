@@ -2,10 +2,15 @@
 
 *Several years ago, the Great Firewall of China was silently upgraded to find and block circumvention servers that employ encryption to defeat deep packet inspection. The system is now used to block protocols such as Tor, SoftEther, and SSH. In this talk, we will give an overview of how this system works, and how it can be circumvented.*
 
-Philip Winter. 2015-12-27 17:00-18:15
-https://media.ccc.de/v/32c3-7196-how_the_great_firewall_discovers_hidden_circumvention_servers#video
+Philip Winter
 
-- Already known.
+- https://events.ccc.de/congress/2015/Fahrplan/events/7196.html
+- https://media.ccc.de/v/32c3-7196-how_the_great_firewall_discovers_hidden_circumvention_servers
+
+
+## Talk notes
+
+- Already known about GFW.
   - Collected knowledge is large.
   - Research usually one-offs.
   - More research over time would be good.
@@ -48,7 +53,7 @@ https://media.ccc.de/v/32c3-7196-how_the_great_firewall_discovers_hidden_circumv
   - The probes leak internal state, showing a central system.
     - A centralized entity might control different proxy servers around the Chinese network.
     - Could also be controlled through switches at ISPs.
-    - There seeems to be probe/blocking system downtime once every 25h. During this downtime nothing is blocked.
+    - There seems to be probe/blocking system downtime once every 25h. During this downtime nothing is blocked.
     - In 2012, systems were probed in batches.
     - In 2015, scanning is done in realtime; around 500ms delay after a user connects to a Tor bridge.
 - Probed or blocked protocols.
@@ -68,7 +73,7 @@ https://media.ccc.de/v/32c3-7196-how_the_great_firewall_discovers_hidden_circumv
     - DNS root servers.
     - Google infrastructure.
     - GFW soon started verifying addresses.
-  - Send broken or obduscated TCP streams, to break DPI reassembly.
+  - Send broken or obfuscated TCP streams, to break DPI reassembly.
     - Uses kernel-level modifications, but seems to work.
 - Tor's pluggable transports.
   - Uses SOCKS5.
@@ -78,4 +83,3 @@ https://media.ccc.de/v/32c3-7196-how_the_great_firewall_discovers_hidden_circumv
   - The "meek" protocol tunnels traffic over CDNs (Amazon, Azure, Google).
     - CDNs are hard to block, as they are used for other important things.
 
-EOT

@@ -4,6 +4,12 @@
 
 Roger, David Goulet, asn
 
+- https://events.ccc.de/congress/2015/Fahrplan/events/7322.html
+- https://media.ccc.de/v/32c3-7322-tor_onion_services_more_useful_than_you_think
+
+
+## Talk notes
+
 - Hidden services
   - The service is reached through 6 hops.
   - Self-auth, end-to-end crypto, NAT punching, limited surface area.
@@ -17,7 +23,7 @@ Roger, David Goulet, asn
   - Wikileaks set up a server in Sweden.
   - GlobaLeaks (2011).
     - More than 30 projects use it.
-    - Does politics, convincing govenments to set up services.
+    - Does politics, convincing governments to set up services.
   - WildLeaks for animal protection.
   - SecureDrop (2013).
     - Works with magazines.
@@ -25,13 +31,13 @@ Roger, David Goulet, asn
     - .onion link got 4000 retweets on twitter.
   - Security concerns.
     - Bitcoin addresses are being rewritten; tricking users to go to malicious bitcoin websites.
-  - Facebook is now availabe through a .onion address.
+  - Facebook is now available through a .onion address.
     - Even has a PKI EV cert.
   - Public websites.
     - Should be available as an onion service.
     - Gives users a choice -- http, https, onion, https onion.
   - Extra perks.
-    - Can only get wildcard PKI EV cert for .onion addresses.
+    - Can only get wild-card PKI EV cert for .onion addresses.
     - Could be incorporated into Let's Encrypt to get a .onion domain?
       - Tech and policy details remain.
   - IETF RFC7686
@@ -96,3 +102,4 @@ Roger, David Goulet, asn
   - Please deploy a .onion address for your website/service.
     - Would be nice to see more larger services.
 - Funding campaign underway.
+

@@ -4,6 +4,12 @@
 
 Whitney Merrill
 
+- https://events.ccc.de/congress/2015/Fahrplan/events/7457.html
+- https://media.ccc.de/v/32c3-7457-predicting_crime_in_a_big_data_world
+
+
+## Talk notes
+
 - Imagine a world.
   - A police officer walks down the street.
   - Has a camera and an ear plug.
@@ -85,3 +91,4 @@ Whitney Merrill
 - How to eliminate bias?
   - Humans are involved.
   - Initial selection is biased.
+

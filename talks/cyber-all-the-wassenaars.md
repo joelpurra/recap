@@ -4,7 +4,11 @@
 
 Walter van Holst, Nate Cardozo, mlp, Richard Tynan
 
-https://en.wikipedia.org/wiki/Wassenaar_Arrangement
+- https://events.ccc.de/congress/2015/Fahrplan/events/7280.html
+- https://media.ccc.de/v/32c3-7280-cyber_all_the_wassenaars
+
+
+## Talk notes
 
 - Wassenaar agreement.
   - Initially written to limit exporting of physical weapons for armed conflicts.
@@ -18,9 +22,9 @@ https://en.wikipedia.org/wiki/Wassenaar_Arrangement
     - Talking about security software can be illegal.
     - Talking about security software in the US with someone who lives in the EU can be illegal.
 - Dual citizenships can potentially be a problem.
-- Public domain is excempt (?) but the definition is unclear.
+- Public domain is exempt (?) but the definition is unclear.
   - Open source isn't automatically in the public domain.
-  - Code that hasn't been published/commited to a public repository is still private?
+  - Code that hasn't been published/committed to a public repository is still private?
   - Preparing a talk on security outside of the EU may be illegal.
 - The text has been in place since 2009 (?).
   - The drafting process wasn't open to the public
@@ -36,4 +40,8 @@ https://en.wikipedia.org/wiki/Wassenaar_Arrangement
   - The code itself may not be subject to control, but the comments to the code *definitely* are.
   - Gray areas.
 
-EOT
+
+## Links
+
+- https://en.wikipedia.org/wiki/Wassenaar_Arrangement
+

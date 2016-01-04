@@ -2,6 +2,12 @@
 
 *We will detect, bypass, and abuse honeypot technologies and solutions, turning them against the defender. We will also release a global map of honeypot deployments, honeypot detection vulnerabilities, and supporting code.*
 
+- https://events.ccc.de/congress/2015/Fahrplan/events/7277.html
+- https://media.ccc.de/v/32c3-7277-breaking_honeypots_for_fun_and_profit
+
+
+## Talk notes
+
 DeanSysman, Gadi Evron, Itamar Sher
 
 - Cyber Deception.
@@ -92,4 +98,7 @@ DeanSysman, Gadi Evron, Itamar Sher
   - Should make the set of services make sense for the specifik machine.
   - Should make the service exploitable to unknown exploits.
   - ...
-  - 
+  - ...
+
+EOT?
+

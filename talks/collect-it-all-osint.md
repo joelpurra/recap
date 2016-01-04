@@ -4,6 +4,12 @@
 
 M. C. McGrath
 
+- https://events.ccc.de/congress/2015/Fahrplan/events/7340.html
+- https://media.ccc.de/v/32c3-7340-collect_it_all_open_source_intelligence_osint_for_everyone
+
+
+## Talk notes
+
 - ICWatch.
 - Similar systems.
   - Uses data to target people in war zones; Iraq, Afghanistan.
@@ -47,4 +53,4 @@ M. C. McGrath
     - Laywers, journalists, NGOs, activists etcetera to actually use the data.
     - Software developers to improve the software.
     - Project managment to focus the work.
-  - 
+

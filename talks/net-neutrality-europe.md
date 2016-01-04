@@ -2,9 +2,15 @@
 
 *After two years the fight for net neutrality in Europe about the Telecom Single Market Regulation has come to a close. In this talk we will analyse the new net neutrality law and it's consequences and we give you the lessons learned from two years of EU campaigning.*
 
-Thomas Lohninger. 2015-12-28 12:45-13:15.
+Thomas Lohninger
 
-Missed the beginning of the talk.
+- https://events.ccc.de/congress/2015/Fahrplan/events/7387.html
+- https://media.ccc.de/v/32c3-7387-net_neutrality_in_europe
+
+
+## Talk notes
+
+*Missed the beginning of the talk.*
 
 - ...
 - Lessons learned
@@ -60,6 +66,4 @@ Missed the beginning of the talk.
 - Net neutrality is not lost in EU.
   - Legislators are on it.
   - Workshop at 2015-12-28 18:00 EDRi at Noisy Square.
-
-EOT
 

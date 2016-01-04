@@ -4,6 +4,12 @@
 
 Matthew Garrett
 
+- https://events.ccc.de/congress/2015/Fahrplan/events/7343.html
+- https://media.ccc.de/v/32c3-7343-beyond_anti_evil_maid
+
+
+## Talk notes
+
 - Trusted Platform Module
   - Signing of code.
   - Each module calculates the checksum of the next module the next before execution.
@@ -18,9 +24,9 @@ Matthew Garrett
     - Each stored value depends on all the previous values.
     - Uses "incremental" hashing -- the stored value together with the previous hash.
   - Can be used to create disk crypto keys.
-  - There's no authenication; the system will just boot.
+  - There's no authentication; the system will just boot.
     - Doesn't prevent booting from disk as there's no password prompt.
-    - Introducing password promts is hard; no way of telling if the system is still trustworthy.
+    - Introducing password prompts is hard; no way of telling if the system is still trustworthy.
 - Anti evil maid.
   - Encrypt a phrase known only to the user, store in TPM.
   - Show on screen at boot, which proves that the system hasn't been tampered with.
@@ -33,20 +39,21 @@ Matthew Garrett
     - Time-dependent secret will exist in RAM though.
       - Use IOMMU to be more secure?
     - TPM can sign with time of day; code can now be verified on the system level.
-    - Can be done with an externally generated crypto key shared betwen the TPM and mobile phone.
+    - Can be done with an externally generated crypto key shared between the TPM and mobile phone.
       - External key can be extracted from TPM through a design flaw.
-      - Might be overcomplicating things.
+      - Might be over-complicating things.
 - TPM execution can be tied to specific GPIO pins.
   - Can be used to turning on a LED.
     - Susceptible to easy hardware hacks.
   - Can be used to read data from NFC.
     - Store private key on NFC; system won't boot without NFC unit.
-- Attackes.
+- Attacks.
   - "Managment Engine" still has access to memory through DMA.
   - TPM can be attacked physically.
   - Can't trust hardware designed and fabricated by others.
-  - Even with open source CPU designs, who controlls the fabrication process?
+  - Even with open source CPU designs, who controls the fabrication process?
 - Open source.
   - https://github.com/mjg59/shim
   - https://github.com/mjg59/grub
   - https://github.com/mjg59/tpmtotp
+

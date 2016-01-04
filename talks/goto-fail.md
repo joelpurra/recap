@@ -1,5 +1,15 @@
 # goto fail;
 
+*Legend has it, the first iteration of the Secure Sockets Layer (SSL) protocol was broken in ten minutes by Phillip Hallam-Baker and Alan Schiffman during a presentation by Marc Andreesen at MIT in 1994. In the following two decades the protocol has been improved and the implementations have been strengthened, but not without a steady stream of implementation vulnerabilities and protocol design errors. From the ciphersuite rollback attack to LogJam, SSL/TLS has seen a diverse set of problems. In this talk we’ll discuss the pitfalls in designing and implementing a cryptographic protocol and lessons learned from TLS up to version 1.2.*
+
+Nick Sullivan
+
+- https://events.ccc.de/congress/2015/Fahrplan/events/7438.html
+- https://media.ccc.de/v/32c3-7438-goto_fail
+
+
+## Talk notes
+
 - SSL started with Netscape 1.1, around 1993-1944.
 - Wasn't used that much to start with.
 - It has evolved over time.
@@ -42,7 +52,7 @@
     - Unauthenticated padding data leaves room to modify data.
       - Guess the key by modifying the padding values.
       - The right key can be figured out with working XOR backwards.
-      - The error codes returned reveales which part contains an error; in the padding or HMAC.
+      - The error codes returned reveals which part contains an error; in the padding or HMAC.
       - If it's in the HMAC, you have guessed the padding value's XOR.
       - Can also be done with timing side-channel (padding fail fast, HMAC fails slow).
       - Fix is to always compute the HMAC for the entire message.
@@ -65,7 +75,7 @@
   - Don't MAC-then-encrypt -- use AEAD.
   - X.509 and ASN-1 are hard to implement correctly.
   - If old/insecure ciphers are supported, there will be a way to do a downgrade attack.
-- New vulvernability: CurveSwap.
+- New vulnerability: CurveSwap.
   - Attack ECC where curve selection isn't done right.
   - Choose a small curve.
   - Solve DLP.
@@ -74,4 +84,6 @@
     - 4.3% client support.
     - 0.13% Alexa Top 100.000.
     - No publicly broken 160 bit ECC keys yet, but it's also a binary curve which may be weak.
-  - 
+
+EOT?
+

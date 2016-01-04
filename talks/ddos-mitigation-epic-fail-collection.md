@@ -4,12 +4,18 @@
 
 dalmoz (Moshe Zioni)
 
+- https://events.ccc.de/congress/2015/Fahrplan/events/7523.html
+- https://media.ccc.de/v/32c3-7523-ddos_mitigation_epic_fail_collection
+
+
+## Talk notes
+
 - Running legitimate security company with botnet for DDoSing.
 - Everyone gets DDoSed.
 - Method.
   - Legitimate botnet.
   - Selling a DDoS testing service.
-  - Blue team, onsite with the company, taking notes for the red team.
+  - Blue team, on-site with the company, taking notes for the red team.
   - Red team, attacking the company.
 - DDoS in the wild.
   - Rely heavily on bandwidth consumption.
@@ -18,8 +24,8 @@ dalmoz (Moshe Zioni)
   - Most attacks do not require brains -- which is why bandwidth attacks are common, but not the best.
 - Striking harder doesn't require a larger botnet
   - There's more to the web site than the front-end.
-  - Overload the backend by triggering the system to do work.
-  - Keep it stealthy; they might be using the "magig of sniffing".
+  - Overload the back-end by triggering the system to do work.
+  - Keep it stealthy; they might be using the "magic of sniffing".
     - Mitigated by custom scripts.
   - Think of amplification in a general way.
 - Generalized amplifications 4 pillars.
@@ -41,9 +47,9 @@ dalmoz (Moshe Zioni)
       - Security guy didn't get any reports from anyone even though he hard ordered the attack and was waiting for a call.
       - Monitoring didn't show that the actual site was down.
       - The service was on the same network as the HQ office -- all email, voip etcetera was down. No-one could report it.
-    # "Backend servers are not iumportant to protect against DDoS."
-      - People are only looking at the frontend.
-      - Attacking the backend takes longer to detect -- requires internal knowledge.
+    # "Backend servers are not important to protect against DDoS."
+      - People are only looking at the front-end.
+      - Attacking the back-end takes longer to detect -- requires internal knowledge.
       - Mapping the company network is key for an attacker.
         - Databases are often susceptible to DDoS attacks.
         - Provides grounds for intra-amplification.
@@ -78,7 +84,7 @@ dalmoz (Moshe Zioni)
       - All requests at the origin look like they come from the CDN -- but can't block the CDN.
     # "How to protect your CDN origin server."
       - Bad recommendation: "use a random subdomain for your origin server, such as `fbhjdkoedfjhcb.example.com`, which only the CDN knows".
-      - Find other known subdomain, lookup ip, scan /24 or /16 ip range -- good chance your'll find it.
+      - Find other known subdomain, lookup ip, scan /24 or /16 ip range -- good chance you'll find it.
       - WHOIS never forgets -- lookup some whois history websites.
       - DDoS the ip address.
     # "Block 'em!, now them, now them, now them, now them, now them, now them."
@@ -91,3 +97,4 @@ dalmoz (Moshe Zioni)
 - Collected misconception.
   - There's no magic pill to prepare for or fix DDoS.
   - Prepare a plan, not just a mitigation.
+
