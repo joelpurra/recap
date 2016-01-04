@@ -9,23 +9,23 @@ https://en.wikipedia.org/wiki/Wassenaar_Arrangement
 - Exporting "dual use" products illegal.
 - 41 nations have signed (2012); EU countries and the US for example.
 - 2013 added surveilance/intrusion software wordings.
-	- Finalized but not yet implemented? EU/US?
+  - Finalized but not yet implemented? EU/US?
 - Security software can be "dual use".
-	- Traveling with security software can be illegal.
-	- Talking about security software can be illegal.
-	- Talking about security software in the US with someone who lives in the EU can be illegal.
+  - Traveling with security software can be illegal.
+  - Talking about security software can be illegal.
+  - Talking about security software in the US with someone who lives in the EU can be illegal.
 - Dual citizenships can potentially be a problem.
 - Public domain is excempt (?) but the definition is unclear.
-	- Open source isn't automatically in the public domain.
+  - Open source isn't automatically in the public domain.
   - Code that hasn't been published/commited to a public repository is still private?
   - Preparing a talk on security outside of the EU may be illegal.
 - The text has been in place since 2009 (?).
-	- The drafting process wasn't open to the public; the text was known very late.
+  - The drafting process wasn't open to the public; the text was known very late.
 - It's unclear where lines are drawn.
-	- Lots of things "may" require export regulations.
-	- Teaching foreign students can be illegal; it can be a tangible transfer once the information is in the brains of the students.
-	- When lawmakers and officials are asked, they say not to worry -- but they give no clear examples.
-	- Pentesting and commercial systems hardening may be illegal, if it crosses a border in any way.
-	- An innocent victim of malware crossing a border may be considered performing an illegal act (but there may be "intent" wording).
-	- The code itself may not be subject to control, but the comments to the code *definitely* are.
-	- 
+  - Lots of things "may" require export regulations.
+  - Teaching foreign students can be illegal; it can be a tangible transfer once the information is in the brains of the students.
+  - When lawmakers and officials are asked, they say not to worry -- but they give no clear examples.
+  - Pentesting and commercial systems hardening may be illegal, if it crosses a border in any way.
+  - An innocent victim of malware crossing a border may be considered performing an illegal act (but there may be "intent" wording).
+  - The code itself may not be subject to control, but the comments to the code *definitely* are.
+  - 

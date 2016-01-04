@@ -37,36 +37,36 @@ Research usually one-offs, but collected knowledge is large.
   - GFW seems to have a custom TCP/IP stack.
     - TCP sequence numbers are correlated with time.
   - Seems to have a custom Tor client.
-  	- Uses an uncommon "hello" and cipher suite.
-	- The probes leak internal state, showing a central system.
-		- A centralized entity might control different proxy servers around the Chinese network.
-		- Could also be controlled through switches at ISPs.
-		- There seeems to be probe/blocking system downtime once every 25h.
-		- In 2012, systems were probed in batches.
-		- In 2015, scanning is done in realtime -- around 500ms delay after user's connect to a Tor bridge.
+    - Uses an uncommon "hello" and cipher suite.
+  - The probes leak internal state, showing a central system.
+    - A centralized entity might control different proxy servers around the Chinese network.
+    - Could also be controlled through switches at ISPs.
+    - There seeems to be probe/blocking system downtime once every 25h.
+    - In 2012, systems were probed in batches.
+    - In 2015, scanning is done in realtime -- around 500ms delay after user's connect to a Tor bridge.
 - Probed or blocked protocols.
-	- SSH is now unblocked -- not in 2011?
-	- VPN, sometimes OpenVPN, SoftEther.
-	- Vanilla Tor, obfs2, obfs3.
-	- AppSpot, which hosted GoAgent?
-	- TLS.
+  - SSH is now unblocked -- not in 2011?
+  - VPN, sometimes OpenVPN, SoftEther.
+  - Vanilla Tor, obfs2, obfs3.
+  - AppSpot, which hosted GoAgent?
+  - TLS.
 - Tor probes don't use reference implementations.
-	- Probe fingerprinting possible.
-	- Leaking state through internal obfs3 padding values; they're supposed to be large random values, but sometimes are exactly the same.
+  - Probe fingerprinting possible.
+  - Leaking state through internal obfs3 padding values; they're supposed to be large random values, but sometimes are exactly the same.
 - Trolling the GFW.
-	- Filling up their blocklist by connecting to random IP/port addresses with Tor from inside China.
-	- When a probe connects, don't return `ACK` and don't close the socket.
-	- GFW used to blindly block ip addresses; connect to important addresses to have them blocked.
-		- Windows update servers.
-		- DNS root servers.
-		- Google infrastructure.
-		- GFW soon started verifying addresses.
-	- Send broken or obduscated TCP streams, to break DPI reassembly.
+  - Filling up their blocklist by connecting to random IP/port addresses with Tor from inside China.
+  - When a probe connects, don't return `ACK` and don't close the socket.
+  - GFW used to blindly block ip addresses; connect to important addresses to have them blocked.
+    - Windows update servers.
+    - DNS root servers.
+    - Google infrastructure.
+    - GFW soon started verifying addresses.
+  - Send broken or obduscated TCP streams, to break DPI reassembly.
 - Tor's pluggable transports.
-	- Uses SOCKS5.
-	- Scrambles traffic to Turn tor into "something else".
-	- API available for C, Go, Python.
-	- ScrambleSuit, obfs4 work from within China. Uses shared secrets.
-	- "meek" tunnels traffic over CDNs (Amazon, Azure, Google).
+  - Uses SOCKS5.
+  - Scrambles traffic to Turn tor into "something else".
+  - API available for C, Go, Python.
+  - ScrambleSuit, obfs4 work from within China. Uses shared secrets.
+  - "meek" tunnels traffic over CDNs (Amazon, Azure, Google).
 
 EOF
