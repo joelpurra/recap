@@ -4,5 +4,6 @@
 
 Vera Tollmann, Boaz Levin 2015-12-28 16:45-17:45
 
-- This lecture was just the reading of a long and boring text about proxy politics, in a dark room. I'm sure some people fell asleep.
+This lecture was just the reading of a long and boring text about proxy politics, in a dark room. I'm sure some people fell asleep.
 
+EOT

@@ -14,7 +14,9 @@ Matthew Garrett
 - TPM features.
   - Can create and store crypto keys.
   - Only stored in TPM; not memory or on disk.
-  - Storage is dependent on TPM state, 
+  - Storage is dependent on TPM state.
+    - Each stored value depends on all the previous values.
+    - Uses "incremental" hashing -- the stored value together with the previous hash.
   - Can be used to create disk crypto keys.
   - There's no authenication; the system will just boot.
     - Doesn't prevent booting from disk as there's no password prompt.
