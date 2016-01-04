@@ -1,0 +1,146 @@
+# Crypto Wars Part II
+
+*Governments around the world are seeking to put a stop to secure end-to-end encryption, from the UK’s Data Retention and Investigatory Powers Act, to Australia’s Defence Trade Controls Act, to India’s draft proposal to require plain text copies of all secure messages, to the United States’ Federal Bureau of Investigation’s public pressure on global companies like Apple and Google to weaken their security and provide law enforcement access to plain text content.*
+
+Kurt Opsahl (EFF)
+
+- 20 years ago there was a fight against governments limiting crypto in different ways.
+- Background.
+	- Cold war: encryption a military technology.
+	- 1975 DES
+	- 1977 RSA
+	- 1991 PGP
+	- 1995 SSL
+- Munitions.
+	- Two types of munitions.
+		- Tanks, guns, other weapons.
+		- Netscape Navigator.
+	- Export controls.
+		- Limited crypto levels.
+			- 40 bit was max, even though industry standard was 128 bit.
+			- Can be exploited today, by cipher suite downgrade attacks (FREAK, logjam).
+			- 1990s era export-grade crypto can be broken in hours with cheap cloud computing.
+			- See 32c3 talk about logjam.
+		- Code is speech.
+			- EFF and djb took export control to court and won in djb vs DoJ.
+			- First amendment for both speech and "recieving" speech.
+		- 1990s clipper chip.
+			- NSA-manufactured.
+			- For voice communications.
+			- Key escrow.
+			- Broken in 1994, 1995 leaving the same holes open to everyone.
+		- 1997 Strong crypto is great, buuutt...
+		- 2010 Strong encryption is great, they just need to hand over the plaintext.
+		- 2010s encryption at scale.
+			- Encryption for mobile phones (iOS 8, Android).
+			- Mesaging services (iMessage, TextSecure, WhatsApp, ...).
+			- Started with message encryption.
+			- Now end-to-end encryption.
+		- Empire strikes back.
+			- Public and private pressure on companies.
+			- Demonize encryption.
+			- "Terrorism."
+			- Backdoors etcetera.
+			- Lack of back doors irritates.
+				- FBI: ~"people put themsselves beyond the law".
+				- UK PM Cameron: ~"companies need to fight terrorism".
+				- Trying to downplay companies selling crypto as money-hungry buzzword marketers.
+			- Secure back door proposals.
+				- Escrow keys.
+				- Can be broken if escrow agent's key is broken.
+				- Breaks forward secrecy.
+				- Split keys can mitigate, but add complexity.
+				- Can you trust the escrow agent?
+					- Government? Provider? Third-party?
+					- Insider risk.
+					- Law enforcement access points.
+						- Tempting target for criminals, state sponsored attackers.
+						- Greece wiretapping, China attacking Google's law enforcement access point.
+				- Rename "back door"?
+					- Comey: ~"not use the back door, but the front door".
+					- Washington Post: ~"why not have Apple and Google invent a secure golden key?"
+				- Govt strategy.
+					- The next terrorist attack could swing encryption debate around -- govt waiting for it.
+					- ~"Expect terrorists to use encrypted apps".
+					- Place blame on those providing crypto apps.
+				- Spreading FUD.
+					- UK Home Secretary May: ~"we only want to get child pornographers, drug and gun runners."
+					- ...
+				- UK Snooper's Charter
+					- Regulate telecom companies around the world.
+					- "Operators obliged to remove 'electronic protection'" -- can be interpreted to weaken crypto, shared key/escrow, banning end-to-end.
+					- Latest version November 2015.
+					- Currently accepting comments.
+				- Australia's Defence Trace Controls Act.
+					- Prohibits "intangible supply" of encryption tech.
+					- Teachers and researchs could be subject to unclear export controls with severe penalties.
+					- International Assoc of Cryptologic Research and 100s others signed petition.
+				- India considers an encryption policy.
+					- Requires everyone to store encrypted messages also in plaintext.
+					- Was withdrawn.
+				- China's anti-terrorism law.
+					- Passed December 2015.
+					- Draft required companies to hand over encryption keys.
+					- Final version requires a technical interface to aid decryption for the govt.
+				- US has no bill to require backdoors.
+					- Not yet. Obama has hinted something may come.
+					- SaveCrypto.org >100k signatures.
+					- Senate Intelligence Committee likely to introduce bill in spring of 2016.
+					- EFF will fight.
+				- Trans-Pacific Partnership.
+					- TPP has encryption stuff.
+					- Providers may be compelled to give keys "as a condition of sale" -- but maybe in other cases.
+- Technical attacks.
+	- Routing around encryption -- Google's internal networks.
+	- Breaking crypto.
+	- Inserting vulnerabilities.
+	- Malware on end-point.
+- Attacking crypto.
+	- NSA's BULLRUN program has $250M yearly budget.
+		- "Insert vulns".
+		- "Influence policies..."
+	- 2004 NSA paid $10M to RSA to make backdoored `DUAL_EC_DRBG` default.
+		- Backdoored `Q` value.
+	- Juniper attack.
+		- Juniper's ScreenOS used DUAL_EC_DRBG.
+		- Not the same `Q` backdoor.
+		- Could get Dual EC output to passively break VPN.
+		- Snippet of code allowed a hardcoded passwords to break in in SSH and Telnet.
+		- Looks like someone pwned the NSA backdoor.
+	- Malware.
+		- Own the end-point, everything is broken.
+		- Favorite for targeted attacks.
+- Universial declaration of human rights.
+	- Requires encryption.
+	- "Code is speech."
+		- Freedom of expression must allow for publicaion of end-to-end crypto systems -- especially open source projects.
+		- Protecting against oppressive regimes more important than maximizing spying.
+- Principle.
+	- Weak encryptiopn mostly good for mass, untargeted spying.
+		- Mass spying less effective, more invasive.
+		- Strong encryption can guarantee real privacy with math.
+		- Strong encryption enables innovation.
+			- For example ecommerce, bitcoin.
+- Public policy.
+	- Forcing companies to compromise secirity will make everyone less safe.
+		- Encryption critical for seciryt.
+	- Other govts will make similar demands.
+	- Already in a golden age of surveillance.
+- Pragmatism.
+	- Can't stop crypto software/information -- it's already out there.
+		- Especially open source.
+	- Math: can't make crypto both strong and weak at the same time.
+	- Weakening crypto for ordinary citizens won't stop terrosists to use it.
+- Promoting.
+	- Promote, create, improve, use encryption.
+	- Show your friends.
+	- Make censorship resistant tools.
+		- Open source, wide distribution, reproducible builds.
+	- Let'e Encrypt.
+		- "Easy and fun!"
+		- No more excuse for HTTP.
+	- Encrypt the web.
+		- Responses to the NSA's smiley face.
+			- Large proiders massively increased crypto usage. Still PRISM though.
+		- Use secure messagers.
+- Make sure we win Crypto Wars part 2.
