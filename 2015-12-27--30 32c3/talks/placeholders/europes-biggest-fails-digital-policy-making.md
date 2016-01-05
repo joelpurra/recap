@@ -6,3 +6,8 @@ Kirst3nF, Walter van Holst.
 
 - https://events.ccc.de/congress/2015/Fahrplan/events/7227.html
 - https://media.ccc.de/v/32c3-7227-avoiding_kernel_panic_europe_s_biggest_fails_in_digital_policy-making
+
+---
+
+Part of [Recap](https://github.com/joelpurra/recap)
+

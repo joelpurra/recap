@@ -131,3 +131,8 @@ Jennifer Helsby
     - Algorithmic systems need appropriate oversight in order to be controlled.
     - Hacking and privacy advocacy community has an important role in the fight.
 
+
+---
+
+Part of [Recap](https://github.com/joelpurra/recap)
+

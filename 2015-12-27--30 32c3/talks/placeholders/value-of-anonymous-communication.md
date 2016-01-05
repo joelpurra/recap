@@ -6,3 +6,8 @@ greenstadt
 
 - https://events.ccc.de/congress/2015/Fahrplan/events/7324.html
 - https://media.ccc.de/v/32c3-7324-what_is_the_value_of_anonymous_communication
+
+---
+
+Part of [Recap](https://github.com/joelpurra/recap)
+

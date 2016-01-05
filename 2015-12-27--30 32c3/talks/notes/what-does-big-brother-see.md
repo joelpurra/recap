@@ -57,3 +57,8 @@ Simon Menner
 
 - http://simonmenner.com/ -- has some, if not all, of the images from the presentation.
 
+
+---
+
+Part of [Recap](https://github.com/joelpurra/recap)
+

@@ -6,3 +6,8 @@ Joscha
 
 - https://events.ccc.de/congress/2015/Fahrplan/events/7483.html
 - https://media.ccc.de/v/32c3-7483-computational_meta-psychology
+
+---
+
+Part of [Recap](https://github.com/joelpurra/recap)
+

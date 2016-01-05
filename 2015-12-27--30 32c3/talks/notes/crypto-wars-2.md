@@ -151,3 +151,8 @@ Kurt Opsahl (EFF)
         - Use secure messengers.
 - Make sure we win Crypto Wars part 2.
 
+
+---
+
+Part of [Recap](https://github.com/joelpurra/recap)
+

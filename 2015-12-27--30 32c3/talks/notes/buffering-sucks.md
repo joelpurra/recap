@@ -37,3 +37,8 @@ Fredy Kuenzler
         - With the double-sided market, ISPs make a few million €. The loss is much higher.
         - Should interconnections be regulated in the favor of the end-users?
 
+
+---
+
+Part of [Recap](https://github.com/joelpurra/recap)
+

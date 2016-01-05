@@ -77,3 +77,8 @@ Max Schrems
     - Only EU law.
 - US 
 
+
+---
+
+Part of [Recap](https://github.com/joelpurra/recap)
+

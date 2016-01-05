@@ -45,3 +45,8 @@ Walter van Holst, Nate Cardozo, mlp, Richard Tynan
 
 - https://en.wikipedia.org/wiki/Wassenaar_Arrangement
 
+
+---
+
+Part of [Recap](https://github.com/joelpurra/recap)
+

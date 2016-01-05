@@ -11,3 +11,8 @@ Vera Tollmann, Boaz Levin
 ## Talk notes
 
 This lecture was just the reading of a long and boring text about proxy politics, in a dark room. I'm sure some people fell asleep.
+
+---
+
+Part of [Recap](https://github.com/joelpurra/recap)
+

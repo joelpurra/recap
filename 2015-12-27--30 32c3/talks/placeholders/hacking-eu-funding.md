@@ -9,3 +9,8 @@ Holger Krekel
 - https://events.ccc.de/congress/2015/Fahrplan/events/7300.html
 - https://media.ccc.de/v/32c3-7300-hacking_eu_funding_for_a_decentralizing_foss_project
 
+
+---
+
+Part of [Recap](https://github.com/joelpurra/recap)
+

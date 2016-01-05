@@ -7,3 +7,8 @@ BoB Marvan
 - https://events.ccc.de/congress/2015/Fahrplan/events/7356.html
 - https://media.ccc.de/v/32c3-7356-top_x_usability_obstacles
 
+
+---
+
+Part of [Recap](https://github.com/joelpurra/recap)
+

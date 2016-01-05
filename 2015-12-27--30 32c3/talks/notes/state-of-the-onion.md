@@ -89,3 +89,8 @@ Roger, Jacob, Mike Perry, Shari Steele, Alison Macrina
     - Crowd funding collected $120k from 3000 donors.
     - thejuicemedia.com
 
+
+---
+
+Part of [Recap](https://github.com/joelpurra/recap)
+

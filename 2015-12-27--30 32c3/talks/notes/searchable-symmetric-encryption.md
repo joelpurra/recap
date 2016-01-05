@@ -64,3 +64,8 @@ Tobias Mueller, Christian Forler
     - More schemes exists!
     - Searching on encrypted data is practical.
 
+
+---
+
+Part of [Recap](https://github.com/joelpurra/recap)
+

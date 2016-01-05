@@ -67,3 +67,8 @@ Thomas Lohninger
     - Legislators are on it.
     - Workshop at 2015-12-28 18:00 EDRi at Noisy Square.
 
+
+---
+
+Part of [Recap](https://github.com/joelpurra/recap)
+

@@ -98,3 +98,8 @@ dalmoz (Moshe Zioni)
     - There's no magic pill to prepare for or fix DDoS.
     - Prepare a plan, not just a mitigation.
 
+
+---
+
+Part of [Recap](https://github.com/joelpurra/recap)
+
