@@ -36,27 +36,27 @@
     - Access memory, fill up cache.
     - Reload data from memory.
 - Rowhammer.js: the challenges.
-     # How to get physical address in javascript?
-    # Which physical addresses to access?
-    # In which order to access them?
-    # How to get accurate timings in javascript?
+    1. How to get physical address in javascript?
+    1. Which physical addresses to access?
+    1. In which order to access them?
+    1. How to get accurate timings in javascript?
 - Rowhammer.js solutions.
-    # Physical addresses and DRAM.
+    1. Physical addresses and DRAM.
         - Fixed map from physical address to DRAM cells.
         - Undocumented by Intel.
         - Operating systems use 2MB memory pages. 2MB is 21 bits.
         - The last 21 bits of the physical addresses, are the same as the last 21 bits of the virtual address, is the same last 21 bits of JS array indices.
-    # Get physical memory addresses.
+    1. Get physical memory addresses.
         - Assume cache uses least recently used (LRU) replacement.
         - Pages cross several rows; need to check timing to make sure to get data from page.
         - An Intel "hash" (really XOR) function maps addresses to slices; it has been reverse engineered and can be calculated.
         - This way memory addresses can be mapped to memory banks/rows/cells.
-    # Cache flush strategies.
+    1. Cache flush strategies.
         - Older CPU models replace oldest cache entries first (LRU).
             - Need to repeat reads to evict old cache entry.
         - Newer CPUs don't use LRU; 75% success rate on Haswell, which is too slow.
             - Using a new cache flush strategy which takes care of proper eviction; now 99.7% success rate.
-    # How to get accurate timing in javascript.
+    1. How to get accurate timing in javascript.
         - `window.performance.now()`
             - Timing is rounded to 5 microseconds to avoid some other attacks (cache attacks, used to track mouse movements).
             - Rounding not a problem for Rowhammer.js, as it makes millions of accesses.

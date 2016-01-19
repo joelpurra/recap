@@ -14,19 +14,19 @@ Thomas Lohninger
 
 - ...
 - Lessons learned
-    # Come early to the table.
+    1. Come early to the table.
         - Look at what will be happening in three years.
         - Put your suggestions in early.
-    # Provide actionable items.
+    1. Provide actionable items.
         - Both to users and MEPs.
         - Faxes, calls, emails.
-    # Be creative, adapt fast.
+    1. Be creative, adapt fast.
         - Creative ideas only works once; they now use a digital fax machine instead of a paper one.
         - Examples from Telecom Single Market.
             - Making friends. There are enemies.
             - Hard work pays off.
             - (At least one) draft text acknowledges La Quadrature du Net, EDRi, Access Now.
-    # Be clear about your demands.
+    1. Be clear about your demands.
             - Ask for something realistic.
             - First reading text was fine.
                 - Needs simple majority.
@@ -40,7 +40,7 @@ Thomas Lohninger
             - Are there drawbacks?
         - There was support from the US, famous thinkers, internet companies, venture capitalists.
             - Support came in late -- should have been done when it was not as urgent.
-    # Broaden your movement.
+    1. Broaden your movement.
         - Talk to new groups, outside of the "usual" internet freedom fighters.
 - Net neutrality.
     - Recent battle losses, but not the war.

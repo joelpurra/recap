@@ -38,22 +38,22 @@ dalmoz (Moshe Zioni)
     - Names have been changed.
     - Rated in "facepalms".
     - Examples.
-        # "Limiting the rate of incoming packets."
+        1. "Limiting the rate of incoming packets."
             - Customer had the ISP limit the _incoming_ packet rate to ensure availability.
             - Use reflection.
                 - Download a file from the service, which will choke the _outgoing_ packet rate.
                 - 1kb request, 200kb file (or larger) -- 200x amplification.
-        # "It's OK now, monitoring shows everything is back to normal."
+        1. "It's OK now, monitoring shows everything is back to normal."
             - Security guy didn't get any reports from anyone even though he hard ordered the attack and was waiting for a call.
             - Monitoring didn't show that the actual site was down.
             - The service was on the same network as the HQ office -- all email, voip etcetera was down. No-one could report it.
-        # "Backend servers are not important to protect against DDoS."
+        1. "Backend servers are not important to protect against DDoS."
             - People are only looking at the front-end.
             - Attacking the back-end takes longer to detect -- requires internal knowledge.
             - Mapping the company network is key for an attacker.
                 - Databases are often susceptible to DDoS attacks.
                 - Provides grounds for intra-amplification.
-        # "Buy shiny box, connect all the domains to it."
+        1. "Buy shiny box, connect all the domains to it."
             - RTFM.
             - The box uses some unknown algorithms to detect probably attacks.
             - Defense mechanism is "draining" out traffic first, and then does magic.
@@ -63,31 +63,31 @@ dalmoz (Moshe Zioni)
             - Deep internal infrastructure servers got blocked because they were relying on services connected to the box.
             - Monitoring went dark, because it was also connected to the box.
             - Voip went down, so no internal communications.
-        # "We don't trust the vendor, we don't give them certificates."
+        1. "We don't trust the vendor, we don't give them certificates."
             - Only HTTP goes through the anti-DDoS box.
             - Defense doesn't monitor OSI layer 7? Do HTTPS attacks.
             - SSL re/negotiation.
             - Transmitting via HTTPS, GET/POST/... -- the vendor box can't detect the contents of the attack.
-        # "We need Big Data, collect all the logs"
+        1. "We need Big Data, collect all the logs"
             - ...
-        # "Learning mode -- did you do it?"
+        1. "Learning mode -- did you do it?"
             - All is learned.
             - Calibration hadn't been done, so box didn't know enough about normal traffic.
             - Attack is considered legitimate traffic.
             - RTFM.
             - Vendor: "next time, buy our service to calibrate the site."
-        # "So what CDN is not dynamic? Let's enable it!"
+        1. "So what CDN is not dynamic? Let's enable it!"
             - If dynamic content is enabled, CDN will reduce/skip cache and make origin requests more often.
             - CDN: "Not in cache? Ask the origin!"
             - Ask multiple CDN locations.
             - Add random query parameters -- always avoids/busts CDN cache.
             - All requests at the origin look like they come from the CDN -- but can't block the CDN.
-        # "How to protect your CDN origin server."
+        1. "How to protect your CDN origin server."
             - Bad recommendation: "use a random subdomain for your origin server, such as `fbhjdkoedfjhcb.example.com`, which only the CDN knows".
             - Find other known subdomain, lookup ip, scan /24 or /16 ip range -- good chance you'll find it.
             - WHOIS never forgets -- lookup some whois history websites.
             - DDoS the ip address.
-        # "Block 'em!, now them, now them, now them, now them, now them, now them."
+        1. "Block 'em!, now them, now them, now them, now them, now them, now them."
             - Mitigation technique was to block the entire ip range of an attacker; /16 of the attacker ip.
             - In Germany there are about 116M IPs.
             - About 1800 class B ranges.
